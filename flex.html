@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>grid</title>
+    <title>flex</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border: 5px coral solid;
+      }
+      .item {
+        flex-grow: 0;
+        text-align: center;
+        font-size: large;
+        border: 5px rgb(100, 218, 116) solid;
+      }
+    </style>
   </head>
-  <style>
-    .container {
-      border-width: 5px;
-      border: solid red;
-      padding: 22px;
-      display: grid;
-      grid-auto-rows: minmax(200px, auto);
-      grid-template-columns: repeat(4, 1fr);
-      row-gap: 10px;
-      column-gap: 10px;
-    }
-    .item {
-      font-size: large;
-      text-align: center;
-      border: solid;
-    }
-  </style>
   <body>
     <div class="container">
       <div class="item"><img src="Pa5ri.jpeg" /><br /><b>파오리</b></div>
